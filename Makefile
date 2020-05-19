@@ -1,4 +1,4 @@
-export NAME=funding-success-prediction
+NAME=funding-success-prediction
 
 build-ml-api-aws:
 	docker build --build-arg PIP_REMOTE_PACKAGE=${PIP_REMOTE_PACKAGE} --build-arg TRUSTED_HOST=${TRUSTED_HOST} --build-arg AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID} --build-arg AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY} -t ${NAME}:latest .
