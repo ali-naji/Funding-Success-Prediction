@@ -4,6 +4,5 @@ __pycache__
 *.pkl
 *.egg*
 dist
-*.log
 .pytest*
 .ipynb_checkpoints
