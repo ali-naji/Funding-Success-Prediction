@@ -1,0 +1,94 @@
+{% extends 'base.html' %} {% block title %} Form {% endblock %} {% block
+getstarted %} active {% endblock %} {% block content %}
+<form class="text-center" action="/form" method="POST">
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="Name">Project Name</label>
+      <input
+        type="text"
+        id="Name"
+        name="keywords"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="Country">Country</label>
+      <select name="country" id="Country" class="form-control" required>
+        <option value="">Not Selected</option>
+        <option value="US">United States of America</option>
+        <option value="GB">Great Britain</option>
+        <option value="CA">Canada</option>
+        <option value="AU">Australia</option>
+        <option value="Rare">Other</option>
+      </select>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="Currency">Currency</label>
+      <select name="currency" id="Currency" class="form-control" required>
+        <option value="">Not Selected</option>
+        <option value="USD">USD</option>
+        <option value="GBP">GBP</option>
+        <option value="CAD">CAD</option>
+        <option value="AUD">AUD</option>
+        <option value="Rare">Other</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="Goal">Goal</label>
+      <input
+        type="number"
+        name="goal"
+        min="100"
+        max="1000000"
+        step="0.01"
+        id="Goal"
+        class="form-control"
+      />
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="backersCount">Estimated Backers Count</label>
+      <input
+        type="number"
+        name="backers_count"
+        min="1"
+        max="10000"
+        id="backersCount"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="Communication">Disable Communication</label>
+      <select
+        id="Communication"
+        class="form-control"
+        name="disable_communication"
+        class="form-control"
+        required
+      >
+        <option selected value="">Not Selected</option>
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-12 mb-3">
+      <label for="Description">Project Description</label>
+      <textarea
+        name="desc"
+        id="Description"
+        rows="5"
+        minlength="20"
+        class="form-control"
+        required
+      ></textarea>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+
+{% endblock %}

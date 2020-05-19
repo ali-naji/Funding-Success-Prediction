@@ -1,0 +1,9 @@
+.travis.yml
+packages/funding_model
+research
+jupyter_notebooks*
+.gitignore
+.git
+*.log
+*/venv*
+*/env*

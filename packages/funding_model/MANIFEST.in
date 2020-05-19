@@ -1,0 +1,9 @@
+recursive-include ./funding_model/*
+include ./funding_model/VERSION
+
+exclude .tox 
+exclude ./tests 
+exclude *.pkl 
+exclude *.csv 
+exclude *.log
+recursive-exclude * __pycache__

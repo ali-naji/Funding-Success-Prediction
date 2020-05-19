@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% block title %} About Us {% endblock %} {% block
+about %} active {% endblock %} {% block content %}
+
+<div
+  class="jumbotron jumbotron-fluid"
+  style="color: white; background-color: rgb(0, 186, 111);"
+>
+  <div class="container">
+    <h1 class="display-3">Our ML Algorithm</h1>
+    <p class="lead">Funding Success Classifier</p>
+    <hr class="my-2" />
+    <p>
+      Our Algorithm is a classification model that takes in information about
+      your prospected project like its description, estimated number of backers,
+      financial goal, and whether you will enable or disable communication with
+      backers to a classifier that is trained on thousands of project funding
+      successes and failures with high prediction accuracy to predict the
+      full-funding success chances of your project. Note that success here means
+      fully-meeting financial goals within deadline of project. Projects
+      partially funded by assigned deadline are failures
+    </p>
+    <p class="lead">
+      <a class="btn btn-success" href="/form" role="button">Get Started</a>
+    </p>
+  </div>
+</div>
+{% endblock content %}

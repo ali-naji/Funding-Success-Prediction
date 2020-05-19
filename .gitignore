@@ -1,0 +1,10 @@
+.tox
+__pycache__
+*.csv
+*.pkl
+*.egg*
+tests
+logs
+.pytest*
+.ipynb_checkpoints
+.travis.yml
