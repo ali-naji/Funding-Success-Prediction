@@ -3,7 +3,7 @@ import sys
 from bs4 import BeautifulSoup
 import hashlib
 import boto3
-from vehicles_model import __version__ as _version
+from funding_model import __version__ as _version
 
 s3 = boto3.client('s3', aws_access_key_id=os.environ.get(
     'AWS_ACCESS_KEY_ID'), aws_secret_access_key=os.environ.get('AWS_SECRET_ACCESS_KEY'))
