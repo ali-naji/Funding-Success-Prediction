@@ -1,6 +1,8 @@
 recursive-include ./funding_model/*
 include ./funding_model/VERSION
-
+include ./requirements.txt
+include *.md
+include *.txt
 exclude .tox 
 exclude ./tests 
 exclude *.pkl 

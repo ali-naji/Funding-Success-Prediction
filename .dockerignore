@@ -3,6 +3,8 @@ packages/funding_model
 research
 jupyter_notebooks*
 .gitignore
+dist
+*.csv
 .git
 *.log
 */venv*

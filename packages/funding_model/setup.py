@@ -3,8 +3,11 @@ from setuptools import setup, find_packages
 
 PACKAGE_ROOT = pathlib.Path(__file__).resolve().parent
 
-with open('requirements.txt') as f:
-    requirements = f.read().splitlines()
+
+def list_reqs(fname='requirements.txt'):
+    with open(fname) as f:
+        return f.read().splitlines()
+
 
 with open('README.md') as f:
     readme = f.read().strip()
@@ -15,7 +18,7 @@ with open(PACKAGE_ROOT / 'funding_model' / 'VERSION') as f:
 setup(name='funding-model',
       version=_version,
       packages=find_packages(exclude=('tests', 'docs')),
-      install_requires=requirements,
+      install_requires=list_reqs(),
       python_requires='>=3.7.0',
       author='Ali Naji',
       url="https://github.com/ali-naji",
