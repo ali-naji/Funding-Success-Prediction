@@ -29,7 +29,7 @@ def load_pipeline(filename=f"{config.PIPELINE_FILENAME}{_version}.pkl"):
     save_path = (config.TRAINED_MODELS_DIR / filename).absolute().as_posix()
     if not os.path.exists(config.TRAINED_MODELS_DIR / filename):
         logger.info("Pipeline not found. Will download from source")
-        s3.download_file("mytrainmodels", 'funding_model/'+filename, save_path)
+        s3.download_file("mytrainedmodels", 'funding_model/'+filename, save_path)
     pipeline = joblib.load(config.TRAINED_MODELS_DIR / filename)
     logger.info(f"Pipeline loaded successfully from path : {save_path}")
     return pipeline
