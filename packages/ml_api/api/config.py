@@ -5,7 +5,7 @@ import sys
 from logging.handlers import TimedRotatingFileHandler
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-LOG_DIR = PACKAGE_ROOT / 'logs'
+LOG_DIR = ROOT / 'logs'
 LOG_DIR.mkdir(exist_ok=True)
 LOG_FILE = LOG_DIR / 'ml_api.log'
 FORMATTER = logging.Formatter(
