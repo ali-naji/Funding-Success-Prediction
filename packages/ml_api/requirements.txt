@@ -1,6 +1,6 @@
 --extra-index-url=${PIP_REMOTE_PACKAGE}
 --trusted-host=${TRUSTED_HOST}
 
-flask==1.0.2
+flask==2.3.2
 gunicorn==19.9.0
 funding_model==0.1.0
